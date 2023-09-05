@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+:root {
+    --main-text: 'Yeseva One', cursive;
+    --subtext-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /**background-color: #FAF0DC !important;**/
+    background-image: url('../images/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh !important;
+}
+
+h1.title {
+    margin-top: 150px;
+    font-family: var(--main-text);
+    font-size: 80px;
+}
+
+.subtitle {
+    font-family: var(--subtext-font);
+}
+
+a.btn.nav-button {
+    font-family: var(--subtext-font);
+    width: 100px;
+    padding: 10px;
+    background: none;
+    border-color: #1f1e1d;
+    border-style: solid;
+    transition: 0.3s;
+    color: #1f1e1d;
+    /* margin-bottom: 150px; */
+}
+
+a.nav-button:hover {
+    background-color: #1f1e1d;
+    color: #fff;
+}
+
+h2.title {
+    font-family: var(--main-text);
+    margin-top: 160px;
+}
+
+h3.description {
+    font-family: var(--subtext-font);
+}
+
+h3 span.name {
+    font-family: var(--main-text);
+}
+
+.card.desc-box {
+    width: 100%;
+}
+
+.sub-description {
+    font-family: var(--subtext-font);
+}
+
+.socmeds > a {
+    color: rgb(79, 59, 37);
+    transition: 0.3s;
+}
+
+a.resume {
+    font-family: var(--subtext-font);
+    width: 125px;
+    padding: 10px;
+    background: none;
+    border-color: #1f1e1d;
+    border-style: solid;
+    transition: 0.3s;
+    color: #1f1e1d;
+}
+
+a.resume:hover {
+    background-color: #1f1e1d;
+    color: #fff;
+}
+
+.contact-socmed {
+    font-family: var(--subtext-font);
+}
+
+footer {
+    background-color: #bba38a;
+}
+
+.footer-des {
+    font-family: var(--subtext-font);
+}
+
+
+
+/** media queries **/
+@media screen and (max-width:467px) {
+    a.nav-button {
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+}
