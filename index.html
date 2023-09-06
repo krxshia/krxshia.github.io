@@ -12,19 +12,25 @@
 <body>
     <script src="js/bootstrap.bundle.min.js"></script>
     
+    <!--Video Background-->
+    <video autoplay muted loop id="videoBg">
+        <source src="videos/video-background.mp4" type="video/mp4">
+    </video>
+    <!--/ Video Background-->
+
     <!--Homepage-->
-    <section class="container main py-5">
+    <section class="container reveal main py-5">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div class="row">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center">
                     <h1 class="title">Aeriel Krishia A.</h1>
                     <h6 class="subtitle mb-4">Front-End Developer | Graphic Designer</h6>
                     <div class="d-md-inline">
-                        <a type="button" href="#home" class="btn rounded-0 border-2 nav-button text-decoration-none btn-block btn-md me-2">Home</a>
-                        <a type="button" href="#about" class="btn rounded-0 border-2 nav-button text-decoration-none btn-block btn-md me-2">About</a>
-                        <a type="button" href="#works" class="btn rounded-0 border-2 nav-button text-decoration-none btn-block btn-md me-2">Works</a>
-                        <a type="button" href="#contact" class="btn rounded-0 border-2 nav-button text-decoration-none btn-block btn-md me-2">Contact</a>
-                        <a type="button" href="assets/CV - Aeriel Krishia Atijera.pdf" class="btn rounded-0 border-2 nav-button text-decoration-none btn-block btn-md" target="_blank">Resume</a>
+                        <a type="button" href="#home" class="btn rounded-0 border-2 nav-button text-decoration-none mb-2 btn-block btn-md">Home</a>
+                        <a type="button" href="#about" class="btn rounded-0 border-2 nav-button text-decoration-none mb-2 btn-block btn-md">About</a>
+                        <a type="button" href="#works" class="btn rounded-0 border-2 nav-button text-decoration-none mb-2 btn-block btn-md">Works</a>
+                        <a type="button" href="#contact" class="btn rounded-0 border-2 nav-button text-decoration-none mb-2 btn-block btn-md">Contact</a>
+                        <a type="button" href="assets/Atijera_AerielKrishia-Resume.pdf" class="btn rounded-0 border-2 nav-button text-decoration-none mb-2 btn-block btn-md" target="_blank">Resume</a>
                     </div>
                 </div>
             </div>
@@ -33,32 +39,38 @@
     <!--/ Homepage-->
 
     <!--About Me-->
-    <div id="about" class="container about">
+    <div id="about" class="container reveal about">
         <h2 class="title fw-bold text-center mb-4">About Me</h2>
-        <div class="d-lg-flex d-md-flex d-sm-block">
-            <img src="images/aeriel.jpg" alt="" class="img-thumbnail mx-5" width="400">
-            <div class="card rounded-0 p-5 desc-box" style="background-color: rgba(250, 235, 215, 0.74);">
-                <h3 class="description">Who is <span class="name">Aeriel</span>?</h3><br>
-                <p class="sub-description">
-                    I am a 21-year-old passionate front-end web developer and graphic designer.
-                    Currently enrolled at AMA Computer College - East Rizal, pursuing a degree
-                    in Bachelor of Science in Information Technology, major in Web Application Development.
-                    I'm dedicated to expanding my knowledge and skills, as I believe they hold the key to
-                    addressing the challenges of our rapidly evolving world. <br><br>
-                    My educational journey has allowed me to cultivate a range of skills, including software tools
-                    proficiency, data analysis and processing, web development, and graphic design. <br><br>
-                    Feeling the vibe for a collaboration? Hit me up via <a class="text-decoration-none" style="color: rgb(137, 89, 37);" href="mailto:aerielatijera.19@gmail.com">email</a>, and let's bring our ideas to life - 
-                    no formalities, just creativity!
-                </p>
-                <div class="d-flex justify-content-between align-items-center mt-4">
-                    <div>
-                        <a type="button" href="assets/CV - Aeriel Krishia Atijera.pdf" class="resume text-center text-decoration-none">View Resume</a>
-                    </div>
-                    <div class="socmeds">
-                        <a href="https://www.facebook.com/aerielkrishia.atijera" class="text-decoration-none me-2" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/aeriel-krishia-atijera" class="text-decoration-none me-2" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="mailto:aerielatijera.19@gmail.com" class="text-decoration-none me-2" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-                        <a href="https://www.github.com/krxshia" class="text-decoration-none me-2" target="_blank"><i class="bi bi-github"></i></a>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-wrapper text-center">
+                    <img src="images/aeriel.jpg" alt="" class="img-thumbnail d-sm-mx-5 mb-2" width="350">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card rounded-0 p-5 desc-box" style="background-color: rgba(250, 235, 215, 0.74);">
+                    <h3 class="description"><span class="name">So, who am I?</span></h3><br>
+                    <p class="sub-description">
+                        I am a 21-year-old passionate front-end web developer and graphic designer based in Philippines.
+                        Currently enrolled at AMA Computer College - East Rizal, pursuing a degree
+                        in Bachelor of Science in Information Technology, major in Web Application Development.
+                        I'm dedicated to expanding my knowledge and skills, as I believe they hold the key to
+                        addressing the challenges of our rapidly evolving world. <br><br>
+                        My educational journey has allowed me to cultivate a range of skills, including software tools
+                        proficiency, data analysis and processing, web development, and graphic design. <br><br>
+                        Feeling the vibe for a collaboration? Hit me up via <a class="text-decoration-none" style="color: rgb(137, 89, 37);" href="mailto:aerielatijera.19@gmail.com">email</a>, and let's bring our ideas to life - 
+                        no formalities, just creativity!
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <div>
+                            <a type="button" href="assets/Atijera_AerielKrishia-Resume.pdf" class="resume text-center text-decoration-none">View Resume</a>
+                        </div>
+                        <div class="socmeds">
+                            <a href="https://www.facebook.com/aerielkrishia.atijera" class="text-decoration-none me-2" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/aeriel-krishia-atijera" class="text-decoration-none me-2" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:aerielatijera.19@gmail.com" class="text-decoration-none me-2" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+                            <a href="https://www.github.com/krxshia" class="text-decoration-none me-2" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,39 +79,58 @@
     <!--/ About Me-->
 
     <!--Works-->
-    <div id="works" class="container works">
-        <h2 class="title fw-bold text-center mb-4">Works / Gallery</h2>
+    <div id="works" class="container reveal works">
+        <h2 class="title fw-bold text-center mb-4">Works Categories</h2>
         <div class="align-items-center">
             <div class="gallery">
-                <div class="col mx-3 mb-4">
-                    <div class="row">
-                        <img src="images/img-1.png" alt="Nametag Making for Banner" style="width: 390px; height: 459px; flex-shrink: 0;">
-                        <img src="images/img-2.jpeg" alt="Dedication Card" style="width: 328px; height: 459px; flex-shrink: 0;">
-                        <img src="images/img-3.png" alt="Sectional Conference Announcement" style="width: 361px; height: 459px; flex-shrink: 0;">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 mb-2 justify-content-center">
+                        <div class="image-wrapper text-center">
+                            <div class="hovereffect">
+                                <a href="name_tags.html">
+                                    <img src="images/category-1.jpg" alt="" class="" width="270">
+                                    <div class="overlay">
+                                        <div class="hover-text small">Name Tags</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col mx-3 mb-4">
-                    <div class="row">
-                        <img src="images/img-4.jpg" alt="Christian World" style="width: 407px; height: 261px; flex-shrink: 0;">
-                        <img src="images/img-5.jpeg" alt="Ninang Proposal" style="width: 253px; height: 253px; flex-shrink: 0;">
-                        <img src="images/img-6.jpeg" alt="Gift Ideas" style="width: 255px; height: 255px; flex-shrink: 0;">
-                        <img src="images/img-7.jpg" alt="Thank you for coming tag" style="width: 165px; height: 256px; flex-shrink: 0;">
+                    <div class="col-sm-12 col-md-3 col-lg-3 mb-2">
+                        <div class="image-wrapper text-center">
+                            <div class="hovereffect">
+                                <a href="invitation_cards.html">
+                                    <img src="images/category-2.jpg" alt="" class="" width="270">
+                                    <div class="overlay">
+                                        <div class="hover-text small">Invitation Cards</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col mx-3 mb-4">
-                    <div class="row">
-                        <img src="images/img-8.png" alt="" style="width: 540px; height: 257px; flex-shrink: 0;">
-                        <img src="images/img-9.png" alt="" style="width: 540px; height: 257px; flex-shrink: 0;">
+                    <div class="col-sm-12 col-md-3 col-lg-3 mb-2">
+                        <div class="image-wrapper text-center">
+                            <div class="hovereffect">
+                                <a href="announcement_banners.html">
+                                    <img src="images/category-3.jpg" alt="" class="" width="270">
+                                    <div class="overlay">
+                                        <div class="hover-text small">Announcement Banners</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col mx-3 mb-4">
-                    <div class="row">
-                        <img src="images/img-10.png" alt="" style="width: 1080px; height: 300px;">
-                    </div>
-                </div>
-                <div class="col mx-3 mb-4">
-                    <div class="row">
-                        <img src="images/img-11.png" alt="" style="width: 1080px; height: 300px;">
+                    <div class="col-sm-12 col-md-3 col-lg-3 mb-2">
+                        <div class="image-wrapper text-center">
+                            <div class="hovereffect">
+                                <a href="all_categories.html">
+                                    <img src="images/category-4.jpg" alt="" class="" width="270">
+                                    <div class="overlay">
+                                        <div class="hover-text small">Others</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,8 +139,8 @@
     <!--/ Works-->
 
     <!--Contact-->
-    <div id="contact" class="container contact pb-5 mb-5">
-        <h2 class="title fw-bold text-center mb-4">Let's Get in Touch :)</h2>
+    <div id="contact" class="container reveal contact pb-5 mb-5">
+        <h2 class="title fw-bold text-center mb-4">Let's Get in Touch!</h2>
         <div class="d-lg-flex d-md-flex d-sm-block">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="text-center p-2">
@@ -141,10 +172,32 @@
         <div class="footer-des text-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <p class="mt-2 mb-0">&copy; Copyright 2023. All Rights Reserved.</p>
-                <p>Designed by <span class="fw-bold">Aeriel A.</span></p>
+                <p>Designed and built by <span class="fw-bold">Aeriel A.</span> &hearts;</p>
             </div>
         </div>
     </footer>
     <!--/ Footer-->
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
 </body>
 </html>

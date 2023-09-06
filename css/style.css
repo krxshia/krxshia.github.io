@@ -14,22 +14,39 @@
 
 body {
     /**background-color: #FAF0DC !important;**/
-    background-image: url('../images/main-bg.png');
+    /* background-image: url('../images/main-bg.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh !important;
 }
 
+/** VIDEO BACKGROUND **/
+#videoBg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/** AERIEL KRISHIA A. **/
 h1.title {
     margin-top: 150px;
     font-family: var(--main-text);
     font-size: 80px;
 }
 
+/** FRONT-END DEVELOPER | GRAPHIC DESIGNER **/
 .subtitle {
     font-family: var(--subtext-font);
 }
+
+/** NAV-BUTTONS **/
 
 a.btn.nav-button {
     font-family: var(--subtext-font);
@@ -102,13 +119,76 @@ footer {
     font-family: var(--subtext-font);
 }
 
+.hovereffect {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.hovereffect .overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(93, 68, 41, 0.539) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s !important;
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1 !important;
+}
+
+.hovereffect .hover-text {
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    padding: 10px !important;
+}
+
+.hover-text {
+    font-family: var(--subtext-font);
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/** NAME TAGS **/
+.navbar-brand {
+    font-family: var(--main-text);
+}
+
+a.nav-link {
+    font-family: var(--subtext-font);
+}
+
+.breadcrumb {
+    font-family: var(--subtext-font) !important;
+}
+
 
 
 /** media queries **/
-@media screen and (max-width:467px) {
-    a.nav-button {
-        width: 100%;
-        padding: 10px;
-        display: block;
+@media screen and (max-width:420px) {
+    a.btn {
+        width: 80% !important;
+        margin-bottom: 17px !important;
+    }
+
+    .card-img-top {
+        width: 100% !important;
     }
 }
