@@ -14,7 +14,7 @@
 
 body {
     /**background-color: #FAF0DC !important;**/
-    /* background-image: url('../images/main-bg.png'); */
+    background-image: url('../images/main-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
