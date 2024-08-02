@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+:root {
+    --main-text: 'Yeseva One', cursive;
+    --subtext-font: 'Josefin Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #DFD3BB !important;
+}
+
+.title {
+    font-family: var(--main-text) !important;
+}
+
+.subtitle {
+    font-family: var(--subtext-font) !important;
+}
+
+.contact-info .icon {
+    color: #4e4c49;
+    margin-left: -30px !important;
+    margin-right: 10px !important;
+}
+.contact-info ul {
+    list-style: none !important;
+}
+
+.contact-info ul li {
+    padding: 5px;
+}
+
+.education-container ul {
+    list-style: none !important;
+    margin-left: -30px !important;
+}
+
+.year {
+    color: #4e4c49;
+}
+
+.languages-container ul {
+    list-style: none !important;
+    margin-left: -30px !important;
+}
+
+.skills-container ul {
+    list-style: none !important;
+    margin-left: -30px !important;
+}
+
+.duties {
+    font-size: 13px !important;
+}
+
+.awards {
+    font-size: 13px !important;
+}
